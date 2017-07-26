@@ -107,3 +107,5 @@ glimma-plots
 *.tar
 
 *.gz
+
+\.DS_Store
