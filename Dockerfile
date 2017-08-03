@@ -9,6 +9,7 @@ LABEL version.is-production="false"
 RUN apt-get update && apt-get install -y \
         bzip2 \
         curl \
+        git \
         python3.5 \
         python3-venv \
         && \
