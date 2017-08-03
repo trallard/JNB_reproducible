@@ -1,9 +1,9 @@
 FROM debian:stretch
 MAINTAINER Will Furnass
-LABEL version="0.0.3-beta"
+LABEL version="1.0.0"
 LABEL vendor="University of Sheffield"
 LABEL release-date="2017-08-03"
-LABEL version.is-production="false"
+LABEL version.is-production="true"
 
 # Install the OS packages needed (inc Python 3.5)
 RUN apt-get update && apt-get install -y \
