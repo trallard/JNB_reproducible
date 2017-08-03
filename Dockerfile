@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
         git \
         python3.5 \
         python3-venv \
+        vim-tiny \
+        nano \
         && \
     rm -r /var/lib/apt/lists/*
 
