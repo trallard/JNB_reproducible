@@ -38,4 +38,4 @@ COPY . /home/jupyter/
 EXPOSE 65000
 
 # Start the Jupyter Notebook Server
-CMD ["jupyter", "notebook", "--port=65000", "--no-browser"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=65000", "--no-browser"]
