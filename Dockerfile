@@ -28,7 +28,7 @@ ENV VIRTUAL_ENV=/home/jupyter/.venvs/rse_conf_2017
 RUN pip3.5 install wheel && pip3.5 install -r /tmp/requirements.txt
 
 # Copy in tutorial materials
-COPY *.ipynb *cfg /home/jupyter/
+COPY . /home/jupyter/
 
 # Connections to Jupyter Notebooks are via port 65000
 EXPOSE 65000
