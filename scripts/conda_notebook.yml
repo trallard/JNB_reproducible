@@ -4,5 +4,5 @@ dependencies:
   - numpy
   - pandas
   - matplotlib
-  - sklearn
+  - scikit-learn
   - jupyter
