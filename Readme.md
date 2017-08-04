@@ -1,5 +1,8 @@
 # Jupyter notebooks for reproducible research
 
+Hopefully this will be green....
+[![Build Status](https://travis-ci.org/trallard/JNB_reproducible.svg?branch=master)](https://travis-ci.org/trallard/JNB_reproducible)
+
 This repository contains the materials for the Jupyter notebooks for reproducible research at the [Second RSE conference ](http://rse.ac.uk/conf2017/).
 
 ## Leading by example
@@ -17,7 +20,7 @@ Getting all of the workshop content should be as easy as doing a `git clone` or 
 ## Pre-requisites
 - Make sure you have a GitHub account
 - Get a [Travis CI](https://travis-ci.org) account (make sure it is on travis-ci.org)
-- 
+-
 ## Setting up the Docker container  
 
 First we need to install Docker
@@ -59,4 +62,4 @@ sudo docker run -p 65000:65000 rsesheffield/rse-conf-2017:1.0.0
 # Want to make sure everything works as expected?
 Run the `scripts/env_test.sh` script from your terminal (`source scripts/env_test.sh`) and this will make sure everything works as expected.
 
-If the test is successful you should see the following stuff:
+You will be able to see directly on the terminal is the test passed
