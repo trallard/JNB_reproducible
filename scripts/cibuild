@@ -1,5 +1,7 @@
 #!/bin/bash
-py.test --nbval-lax *.ipynb
+py.test --nbval-lax classify-demo.ipynb
+echo "Testing notebooks \n \n "
+py.test --nbval-lax PCA.ipynb
 echo "Testing notebooks \n \n "
 
 source deactivate
