@@ -6,4 +6,3 @@ dependencies:
   - matplotlib
   - sklearn
   - jupyter
-  - py.test
