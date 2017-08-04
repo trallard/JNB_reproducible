@@ -102,8 +102,6 @@ ENV/
 
 glimma-plots
 
-*.txt
-
 *.tar
 
 *.gz
