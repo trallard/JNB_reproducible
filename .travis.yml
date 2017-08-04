@@ -7,6 +7,7 @@ install:
   - source scripts/get_miniconda.sh
   - conda env create -f scripts/conda_notebook.yml
   - source activate notebooks
+  - pip install nbval
 
 # anything you need to be done before the main script
 before_script:
@@ -19,5 +20,5 @@ script: ./scripts/cibuild
 branches:
   only:
   - master
-  
+
 sudo: false  # route your build to the container-based infrastructure for a faster build

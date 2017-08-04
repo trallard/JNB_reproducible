@@ -7,5 +7,3 @@ dependencies:
   - sklearn
   - jupyter
   - py.test
-pip:
-  - nbval
