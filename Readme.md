@@ -14,7 +14,10 @@ Alternatively the web hosted version of the slides can be found [here]().
 
 Getting all of the workshop content should be as easy as doing a `git clone` or `git fork` on this repository.
 
-
+## Pre-requisites
+- Make sure you have a GitHub account
+- Get a [Travis CI](https://travis-ci.org) account (make sure it is on travis-ci.org)
+- 
 ## Setting up the Docker container  
 
 First we need to install Docker
