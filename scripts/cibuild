@@ -1,0 +1,5 @@
+#!/bin/bash
+py.test --nbval -lax *.ipynb
+echo "Testing notebooks \n \n "
+
+source deactivate

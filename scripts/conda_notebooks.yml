@@ -1,0 +1,11 @@
+name: notebooks
+dependencies:
+  - python=3.5
+  - numpy
+  - pandas
+  - matplotlib
+  - sklearn
+  - jupyter
+  - py.test
+pip:
+  - nbval
