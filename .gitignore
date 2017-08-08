@@ -107,3 +107,6 @@ glimma-plots
 *.gz
 
 \.DS_Store
+
+
+reveal.js/

@@ -14,6 +14,7 @@ A suitable environment is provided in the form of a Docker container (Dockerfile
 The slides are built using reveal.js and can be served locally following the instructions shown [here](https://github.com/hakimel/reveal.js/).
 
 Alternatively the web hosted version of the slides can be found in the following sites: [http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/](http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/)
+
 [http://bitsandchips.me/JNB_reproducible/](http://bitsandchips.me/JNB_reproducible/)
 
 Getting all of the workshop content should be as easy as doing a `git clone` or `git fork` on this repository.
