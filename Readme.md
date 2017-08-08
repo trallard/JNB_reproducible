@@ -3,7 +3,7 @@
 Hopefully this will be green....
 [![Build Status](https://travis-ci.org/trallard/JNB_reproducible.svg?branch=master)](https://travis-ci.org/trallard/JNB_reproducible)
 
-This repository contains the materials for the Jupyter notebooks for reproducible research at the [Second RSE conference ](http://rse.ac.uk/conf2017/).
+This repository contains the materials for the Jupyter notebooks for reproducible research workshop given at the [Second RSE conference ](http://rse.ac.uk/conf2017/) (7-8th September 2017).
 
 ## Leading by example
 
@@ -13,14 +13,15 @@ A suitable environment is provided in the form of a Docker container (Dockerfile
 
 The slides are built using reveal.js and can be served locally following the instructions shown [here](https://github.com/hakimel/reveal.js/).
 
-Alternatively the web hosted version of the slides can be found [here](http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/).
+Alternatively the web hosted version of the slides can be found in the following sites: [http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/](http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/)
+[http://bitsandchips.me/JNB_reproducible/](http://bitsandchips.me/JNB_reproducible/)
 
 Getting all of the workshop content should be as easy as doing a `git clone` or `git fork` on this repository.
 
 ## Pre-requisites
 - Make sure you have a GitHub account
 - Get a [Travis CI](https://travis-ci.org) account (make sure it is on travis-ci.org)
--
+
 ## Setting up the Docker container  
 
 First we need to install Docker
