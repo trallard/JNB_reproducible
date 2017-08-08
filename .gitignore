@@ -107,3 +107,5 @@ glimma-plots
 *.gz
 
 \.DS_Store
+
+.sass-cache/
