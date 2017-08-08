@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>nbdime and nbval: diff, merge and validate Jupyter Notebooks for reproducible research</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/custom.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
 		<!-- Font awesome -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -34,7 +34,7 @@
 		<h4><font color=$base1> Supercharged with nbdime and nbval: diff, merge, and validate </font> </h4>
     <img src="resources/rse-sheffield-logo.png" alt="Research Software Engineering (RSE) Sheffield Logo"
 		id="rse-logo-title-slide" width='60%'/>
-    <p><a href="https://github.com/RSE-Sheffield/RSE_conference_jupyter_workshop">https://goo.gl/fP5VSD</a></p>
+    <p><a href="https://github.com/trallard/JNB_reproducible">https://goo.gl/fP5VSD</a></p>
     <p><a href="https://twitter.com/RSE_sheffield"><i class="fa fa-twitter" aria-hidden="true"></i>
 			@RSE_Sheffield</a></p>
 </section>
@@ -43,28 +43,24 @@
         data-separator-vertical="^\n\n"
         data-separator-notes="^Note:"
         data-charset="iso-8859-15">
-				data-element-attributes="{_\s*?([^}]+?)}">
 </section>
 <section data-markdown="02-nb-and-vcs.md"
         data-separator="^\n\n\n"
         data-separator-vertical="^\n\n"
         data-separator-notes="^Note:"
         data-charset="iso-8859-15">
-				data-element-attributes="{_\s*?([^}]+?)}">
 </section>
 <section data-markdown="03-nbdime.md"
         data-separator="^\n\n\n"
         data-separator-vertical="^\n\n"
         data-separator-notes="^Note:"
         data-charset="iso-8859-15">
-				data-element-attributes="{_\s*?([^}]+?)}">
 </section>
 <section data-markdown="04-nbval.md"
         data-separator="^\n\n\n"
         data-separator-vertical="^\n\n"
         data-separator-notes="^Note:"
         data-charset="iso-8859-15">
-				data-element-attributes="{_\s*?([^}]+?)}">
 </section>
 
 <section data-markdown="05-merging.md"
@@ -72,14 +68,13 @@
         data-separator-vertical="^\n\n"
         data-separator-notes="^Note:"
         data-charset="iso-8859-15">
-				data-element-attributes="{_\s*?([^}]+?)}">
 </section>
 <!-- end of slide content -->
 			</div>
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -88,10 +83,10 @@
 			Reveal.initialize({
 
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 
