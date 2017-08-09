@@ -83,6 +83,7 @@ $ nbmerge-web base.ipynb local.ipynb remote.ipyn -o merged.ipynb
 ---
 
 You can check the status of this repo here: <!-- .element: class="fragment" -->
+
 [https://travis-ci.org/trallard/JNB_reproducible](https://travis-ci.org/trallard/JNB_reproducible) <!-- .element: class="fragment" -->
 
 
@@ -101,4 +102,5 @@ You should have a `.travis.yml` file. This tells Travis what steps to follow for
 
 
 <display-text> And this is only the very beginning... </display-text>
+
 <display-text> Thank you all :)  </display-text><!-- .element: class="fragment" -->

@@ -53,6 +53,7 @@ You can specify the parts to be compared:
 - `--attachments` / `-a`
 
 
+
 ## Much better
 <img src="resources/nbdiff1.png" width=100%;>
 
