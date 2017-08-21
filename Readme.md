@@ -25,7 +25,7 @@ Getting all of the workshop content should be as easy as doing a `git clone` or 
 
 ## Setting up the Docker container  
 
-First we need to install Docker
+First we need to install Docker (assuming that you're running Fedora Linux on your machine): 
 ```bash
 sudo dnf -y update
 sudo dnf install docker
@@ -62,6 +62,14 @@ sudo docker run -p 65000:65000 rsesheffield/rse-conf-2017:1.0.1
 ```
 
 # Want to make sure everything works as expected?
-Run the `scripts/env_test.sh` script from your terminal (`source scripts/env_test.sh`) and this will make sure everything works as expected.
+Run the `scripts/env_test.sh` script from your terminal (`bash scripts/env_test.sh`) and this will make sure everything works as expected.
 
-You will be able to see directly on the terminal is the test passed
+You will be able to see directly on the terminal is the test passed.
+
+# Rebuilding the container
+
+To rebuild the Docker container:
+
+```sh
+sudo docker build -t rsesheffield/rse-conf-2017:1.0.1 -t rsesheffield/rse-conf-2017:latest .
+```
