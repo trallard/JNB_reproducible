@@ -32,7 +32,9 @@ RUN pip3.5 install wheel && \
     rm -rf /home/jupyter/.cache/pip
 
 # Copy in tutorial materials
-COPY . /home/jupyter/
+RUN mkdir /home/jupyter/JNB_reproducible
+COPY . /home/jupyter/JNB_reproducible
+WORKDIR /home/jupyter/JNB_reproducible
 
 # Connections to Jupyter Notebooks are via port 65000
 EXPOSE 65000

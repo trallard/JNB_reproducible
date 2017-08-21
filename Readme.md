@@ -39,8 +39,8 @@ sudo systemctl enable docker
 
 We have created a Docker container for this workshop, so we need to pull this from the docker repository and then run it in our machine:
 ```
-sudo docker pull rsesheffield/rse-conf-2017:1.0.0
-sudo docker run -p 65000:65000 -ti rsesheffield/rse-conf-2017:1.0.0 /bin/bash
+sudo docker pull rsesheffield/rse-conf-2017:1.0.1
+sudo docker run -p 65000:65000 -ti rsesheffield/rse-conf-2017:1.0.1 /bin/bash
 ```
 By now you should have a fully operational Docker container with all the libraries/dependencies needed for this workshop.
 
@@ -58,7 +58,7 @@ Both commands will present URLs that can be browser from outside the container
 
 Alternatively, if you run the container without specifying a command then it will just start a Jupyter Notebook server (i.e. does what lines 1&2 above do), but note that if you use this approach then stopping the Notebook server will also stop the container.
 ```
-sudo docker run -p 65000:65000 rsesheffield/rse-conf-2017:1.0.0
+sudo docker run -p 65000:65000 rsesheffield/rse-conf-2017:1.0.1
 ```
 
 # Want to make sure everything works as expected?
