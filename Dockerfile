@@ -17,10 +17,12 @@ RUN apt-get update && apt-get install -y \
         && \
     rm -r /var/lib/apt/lists/*
 
-# Ensure Jupyter can be run as a non-privileged user
+# Create user for running Jupyter as
+# (but don't switch to it yet as we still need to chown)
 RUN useradd --create-home --shell /bin/bash jupyter
+
+# Become unprivileged jupyter user
 USER jupyter
-WORKDIR /home/jupyter
 
 # Create a Python 3.5 virtual environment
 COPY requirements.txt /tmp/requirements.txt
@@ -32,7 +34,16 @@ RUN pip3.5 install wheel && \
     rm -rf /home/jupyter/.cache/pip
 
 # Copy in tutorial materials
-COPY . /home/jupyter/
+# (do this last so we need to rebuild fewer layers
+# if the workshop source material changes)
+USER root
+RUN mkdir /home/jupyter/JNB_reproducible
+COPY . /home/jupyter/JNB_reproducible
+RUN chown -R jupyter:jupyter /home/jupyter/JNB_reproducible
+USER jupyter
+
+# Switch to the dir containing our material
+WORKDIR /home/jupyter/JNB_reproducible
 
 # Connections to Jupyter Notebooks are via port 65000
 EXPOSE 65000
