@@ -15,6 +15,7 @@ Let's play a game...
 
 
 Head to <a href='https://goo.gl/4RUcB7' target='_blank'> https://goo.gl/4RUcB7 </a>
+
 ---
 
 You have 5 minutes to identify and describe the differences
@@ -22,7 +23,7 @@ You have 5 minutes to identify and describe the differences
 <p class="fragment fade-up">
 Write your findings in our etherpad:
 <br>
-[https://goo.gl/JsmJQS](https://goo.gl/JsmJQS)
+<a href='https://goo.gl/JsmJQS' target='_blank'> https://goo.gl/JsmJQS </a>
 </p>
 
 
