@@ -14,7 +14,7 @@ Let's play a game...
 
 
 
-Head to [https://goo.gl/4RUcB7](https://goo.gl/4RUcB7)
+Head to <a href='https://goo.gl/4RUcB7' target='_blank'> https://goo.gl/4RUcB7 </a>
 ---
 
 You have 5 minutes to identify and describe the differences
