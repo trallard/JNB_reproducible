@@ -110,7 +110,7 @@ $ nbdiff-web -so diff_ex/RNA-sequencing.ipynb diff_ex/RNA-sequencing2.ipynb
 
 
 
-## Integrate with git
+## Integrate with <i class="fa fa-git-square" aria-hidden="true"></i>
 Configuring all diff/merge drivers and tools:
 ```
 $ nbdime config-git --enable --global
