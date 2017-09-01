@@ -1,10 +1,14 @@
 <section class='dark-diagonal'>
 
 <h2>More hands on... yei!</h2>
-<img src="resources/noidea.jpg" >
+<img src="resources/noidea.jpg"  style='width:30%'>
 <br>
 <small> Taken from http://geek-and-poke.com/ </small>
 <br>
+<div class='float_modal fragment fade-in'>
+  <p class='modal_p'> This is entirely optional... so feel free
+  to go along at your own pace </p>
+</div>
 </section>
 
 
@@ -63,7 +67,6 @@ aaaaand we end up with something like this! <!-- .element: class="fragment" -->
 
 
 ## Once again nbdime should help us here
-(try this on your own time)
 
 ```
 $ nbmerge base.ipynb local.ipynb remote.ipyn > merged.ipynb
@@ -102,5 +105,4 @@ You should have a `.travis.yml` file. This tells Travis what steps to follow for
 
 
 <display-text> And this is only the very beginning... </display-text>
-
-<display-text> Thank you all :)  </display-text><!-- .element: class="fragment" -->
+<display-text> Thank you all :)  </display-text>
