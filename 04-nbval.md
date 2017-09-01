@@ -1,7 +1,8 @@
 <section class='dark-diagonal'>
 
 <h2>Notebook <accent-text> testing</accent-text> with nbval</h2>
-<img src="resources/test1.jpg" >
+<a href='http://opendreamkit.org' target='_blank'>
+<img src="resources/test1.jpg" style='width:30%' > </a>
 <br>
 <small> Taken from http://geek-and-poke.com/ </small>
 <br>
@@ -30,7 +31,19 @@ $ pip install nbval
 
 
 
-## Execution
+## Hands-on
+We will be working with this Jupyter notebook:
+<img src='resources/classify1.png' style='width: 40%'/>
+
+
+
+<img src='resources/classify2.png' style='width: 40%'/>
+
+You can find it here: [https://goo.gl/B2Y4J7](https://goo.gl/B2Y4J7)
+
+
+
+## Validating the notebook
 You need to execute `py.test` using the `nbval` flag to differentiate the testing:
 
 ```
@@ -40,8 +53,7 @@ $ py.test --nbval classify-demo.ipynb
 
 
 ### The output
-<img src='resources/fail_test1.png'>
-
+<img src='resources/fail_test1.png' style='width:80%'/>
 
 
 <img src='resources/fail_test2.png'>
@@ -56,7 +68,7 @@ $ py.test --nbval classify-demo.ipynb
   <ul>
   <li> Manual run of the notebook </li> <!-- .element: class="fragment" -->
   <li> Outputs and inputs are <strong> stored </strong> in the notebooks </li> <!-- .element: class="fragment" -->
-  <li> These outputs will be used a reference for the tests</li> <!-- .element: class="fragment" -->
+  <li> These outputs will be used a <strong>reference</strong> for the tests</li> <!-- .element: class="fragment" -->
   </ul>
   </div>
 
@@ -64,7 +76,7 @@ $ py.test --nbval classify-demo.ipynb
   <ul>
   <li> Validating with py.test runs the notebook <strong>without
   storing </strong> the information</li> <!-- .element: class="fragment" -->
-  <li>Compares the new inputs to the <strong> stored ones </strong></li> <!-- .element: class="fragment" -->
+  <li>Compares the new outputs to the <strong> stored ones </strong></li> <!-- .element: class="fragment" -->
   </div>
   </div>
 </section>
@@ -74,7 +86,7 @@ $ py.test --nbval classify-demo.ipynb
 <h3><accent-text> <i class="fa fa-meh-o" aria-hidden="true"></i>
  At the moment our test is failing... </accent-text><h3>
 
-<img src='resources/fail_test3.png'>
+<img src='resources/fail_test3.png' style='width:80%'/>
 
 
 
@@ -116,8 +128,21 @@ You can provide a sanitizing file at the command prompt e.g.:
 ```
 $ py.test --nbval classify-demo.ipynb --sanitize-with sanitize_nb.cfg
 ```
+In fact you have one in your repository: `sanitize.cfg`
+```bash
+[regex1]
+regex: \d{1,2}/\d{1,2}/\d{2,4}
+replace: DATE-STAMP
 
-Explicitly say which outputs to evaluate:
+[regex2]
+regex: \d{2}:\d{2}:\d{2}
+replace: TIME-STAMP
+```
+
+
+
+Explicitly say which outputs to evaluate
+You need to open the Jupyter notebook and select which cells to be evaluated or not.
 ```python
 # NBVAL_IGNORE_OUTPUT
 # NBVAL_CHECK_OUTPUT
@@ -131,4 +156,6 @@ you can specify `--nbval-lax` which runs notebooks and checks for errors, but on
 $ py.test --nbval-lax classify-demo.ipynb
 ```
 
-<img src='resources/nbval-lax.png'><!-- .element: class="fragment" -->
+
+
+<img src='resources/nbval-lax.png' style='width:100%' />

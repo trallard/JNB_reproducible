@@ -141,7 +141,8 @@ replace: TIME-STAMP
 
 
 
-Explicitly say which outputs to evaluate:
+Explicitly say which outputs to evaluate
+You need to open the Jupyter notebook and select which cells to be evaluated or not.
 ```python
 # NBVAL_IGNORE_OUTPUT
 # NBVAL_CHECK_OUTPUT
@@ -155,4 +156,6 @@ you can specify `--nbval-lax` which runs notebooks and checks for errors, but on
 $ py.test --nbval-lax classify-demo.ipynb
 ```
 
-<img src='../resources/nbval-lax.png'><!-- .element: class="fragment" -->
+
+
+<img src='../resources/nbval-lax.png' style='width:100%' />
