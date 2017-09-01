@@ -58,7 +58,7 @@ Write your findings in our etherpad:
   Jupyter notebooks are saved in the form of plain text JSON format...
 
  <div class='fragment'>
-  <div class='float_modal fragment fade-out' style='top: 80%; left:20%'>
+  <div class='float_modal fragment fade-out' style='top: 78%; left:20%'>
     <img class='modal_img ' src='../resources/json_lol.png' />
   </div>
 </div>
