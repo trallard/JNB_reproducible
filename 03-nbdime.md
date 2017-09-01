@@ -103,6 +103,7 @@ $ nbdiff-web -so diff_ex/RNA-sequencing.ipynb diff_ex/RNA-sequencing2.ipynb
 <small> Taken from http://geek-and-poke.com/ </smal>
 
 
+
 ## NBDIME version control integration
 (Note: only git is supported at the moment)
 - As <strong> drivers </strong> for your diff and merge operations (nbdime takes over these)
@@ -136,9 +137,7 @@ $ git diff de2863c 404e4e0
 $ nbdiff-web de2863c 404e4e0
 ```
 
-
-
-<img src="resources/diff_webgit1.png" style='width:75%'/>
+<img src="resources/diff_webgit1.png" style='width:50%'/>
 
 
 

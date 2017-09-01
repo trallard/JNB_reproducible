@@ -1,15 +1,15 @@
 <section class='dark-diagonal'>
 
 <h2>Notebook <accent-text> testing</accent-text> with nbval</h2>
-<a href='http://opendreamkit.org' target='_blank'>
-<img src="../resources/test1.jpg" style='width:30%' > </a>
+<img src="../resources/test1.jpg" style='width:30%' >
 <br>
 <small> Taken from http://geek-and-poke.com/ </small>
 <br>
 </section>
 
 
-# Brought to you by... OpenDreamKit too!
+
+### Brought to you by... OpenDreamKit too!
 #### (these guys are doing good stuff!)
 <img src="../resources/odk-logo.svg" height='400px'>
 <br>
