@@ -8,9 +8,11 @@
 
 ## I love Jupyter notebooks and Version control!
 
-Let's play a game...
+<div class='float_modal fragment'>
+<p class='modal_p'> Let's play a game... </p>
+</div>
 
-<img src='../resources/wally.jpg' height=300px;>
+<img src='../resources/wally.jpg'>
 
 
 

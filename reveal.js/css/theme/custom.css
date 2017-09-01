@@ -1,5 +1,6 @@
 /**
- * Custom theme for presentations
+ * Custom theme for presentations: modified from the original
+ * reveal.js black theme
  */
 @import url("https://fonts.googleapis.com/css?family=Boogaloo|Dosis|Vast+Shadow|Maven+Pro");
 @import url(../../lib/font/leafy/leafy.css);
@@ -90,8 +91,8 @@ body {
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  width: 45%;
+  min-width: 300px; }
 
 .reveal strong,
 .reveal b {
@@ -372,5 +373,26 @@ body {
   border: 4px solid #E5E9F6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   max-height: 90%; }
+
+/****************************/
+/* Floating box         */
+/****************************/
+.float_modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  max-width: 900px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 100px;
+  z-index: 2000;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(45, 51, 57, 0.98);
+  border-radius: 15px; }
+
+.modal_p {
+  padding: 5px;
+  color: #C687E8;
+  font-size: 0.56em; }
 
 /*# sourceMappingURL=custom.css.map */
