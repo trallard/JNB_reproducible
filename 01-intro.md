@@ -33,46 +33,59 @@ Leading to better standards for research specific software as a fundamental part
 scientific advancement<!-- .element: class="fragment" -->
 
 
-<img src='resources/BSBR.jpg'>
+<img src='/resources/BSBR.jpg'>
 
 
 
 ## Jupyter notebooks are taking over
-- Versatile tool: with <strong> over 80 kernels </strong>available
-- Publication ready documents
-  - Script for data analysis/modelling
-  - Text and mathematical equations
-  - Plots and other digital objects generated
-  - Dynamic interactions (ipywidgets)
+<ul>
+<li class='fragment'> Versatile tool: with <strong> over 80 kernels </strong>available</li>
+</ul>
+
+<div class='float_modal fragment'>
+  <p class='modal_p'> Essentially over 80 programming languages available </p>
+</div>
+
+<ul class='fragment'>
+<li> Publication ready documents </li>
+<ul>
+  <li> Script for data analysis/modelling <l/i>
+  <li> Text and mathematical equations</li>
+  <li> Plots and other digital objects generated</li>
+  <li> Dynamic interactions (ipywidgets)</li>
+</ul>
+</ul>
+
 
 
 <br>
-<accent-text> Let's have a look at some examples...</accent-text> <!-- .element: class="fragment" -->
+<accent-text> Let's have a look at some examples...</accent-text>
 
 
 
 ### Lorena Barba's famous notebooks
-<img src='resources/lb1.PNG'>
+<img src='/resources/lb1.PNG'>
 
 
 
-<img src='resources/lb2.PNG', height='85%'>
+<img src='/resources/lb2.PNG'>
 
 [12 Steps to Navier Stokes](http://lorenabarba.com/blog/cfd-python-12-steps-to-navier-stokes/)
 
 
 
 ### Bioinformatics awareness days at Sheffield
-<img src='resources/bad_days.PNG'>
+<img src='/resources/bad_days.PNG'>
 <br>[See here](http://bitsandchips.me/BAD_days)
 
 
 
 ### Everybody loves the notebooks!!
-<img src='resources/sanger.PNG'>
+<img src='/resources/sanger.PNG'>
 
 
 
 #### And develop resources on top of them
-<img src='resources/aladin.gif'>
+<img src='/resources/aladin.gif'>
+
 [ipyaladin](https://github.com/cds-astro/ipyaladin)
