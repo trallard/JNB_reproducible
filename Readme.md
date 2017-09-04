@@ -5,13 +5,19 @@ Hopefully this will be green....
 
 This repository contains the materials for the Jupyter notebooks for reproducible research workshop given at the [Second RSE conference ](http://rse.ac.uk/conf2017/) (7-8th September 2017).
 
+Critically, we will  introduce two technologies recently developed as part of the EU OpenDreamKit project, nbval and nbdime, which bring unit testing and version control to the Jupyter notebook ecosystem.
+By doing so we aim to encourage others to adopt best development practices leading to more reproducible, replicable, and reliable computational results.
+
 ## Leading by example
 
-Since this workshop is centered  around establishing best practices for reproducible research it is completely self contained and should be easily adapted/extended for future workshops. Feel free to raise issues if you see it fit.
+Since this workshop is centered  around establishing best practices for reproducible research it is completely self contained and should be easily adapted/extended for future
+ workshops.
+ **Feel free to raise issues if you see it fit.**
 
-A suitable environment is provided in the form of a Docker container (Dockerfile provided in the repo). The instructions to set your own environment are given below.
+A suitable environment is provided in the form of a Docker container (Dockerfile provided in the repo). The instructions to get this working in your personal computer are given in the [facilitator notes](./facilitator_notes.md)
 
 The slides are built using reveal.js and can be served locally following the instructions shown [here](https://github.com/hakimel/reveal.js/).
+ Since the slides are served using GitHub pages, these can be found in the `gh-pages` branch of this repository.
 
 Alternatively the web hosted version of the slides can be found in the following sites: [http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/](http://rse.shef.ac.uk/RSE_conference_jupyter_workshop/)
 
@@ -19,57 +25,24 @@ Alternatively the web hosted version of the slides can be found in the following
 
 Getting all of the workshop content should be as easy as doing a `git clone` or `git fork` on this repository.
 
+## Licensing
+----- Copy from Whittaker ----
+
 ## Pre-requisites
 - Make sure you have a GitHub account
 - Get a [Travis CI](https://travis-ci.org) account (make sure it is on travis-ci.org)
 
-## Setting up the Docker container  
+**Note:** as mentioned above, the required packages for this workshop are provided in the form of a Docker container, shall you opt not to use this container you need to ensure you have the following installed in your computer:
+- Python 3.5
+- git
+- jupyter notebooks
+- pip
+- pandas
+- seaborn
 
-First we need to install Docker (assuming that you're running Fedora Linux on your machine): 
-```bash
-sudo dnf -y update
-sudo dnf install docker
-```
+Also you will need to have a terminal / command line tool (CygWin or git bash are recommended for Windows users).
 
-once this is done we start Docker
-```bash
-sudo systemctl start docker
-sudo systemctl enable docker
-```
+## Attendees of the RSE conference 2017
 
-We have created a Docker container for this workshop, so we need to pull this from the docker repository and then run it in our machine:
-```
-sudo docker pull rsesheffield/rse-conf-2017:1.0.1
-sudo docker run -p 65000:65000 -ti rsesheffield/rse-conf-2017:1.0.1 /bin/bash
-```
-By now you should have a fully operational Docker container with all the libraries/dependencies needed for this workshop.
-
-We have specified ports for the jupyter notebooks. To launch a jupyter notebook instance from the container you should run this as:
-```
-jupyter notebook --ip=0.0.0.0 --port=65000 --no-browser
-```
-
-similarly for the web browser nbdime tools:
-```
-nbdiff-web --ip 0.0.0.0 --port 65000
-```
-
-Both commands will present URLs that can be browser from outside the container
-
-Alternatively, if you run the container without specifying a command then it will just start a Jupyter Notebook server (i.e. does what lines 1&2 above do), but note that if you use this approach then stopping the Notebook server will also stop the container.
-```
-sudo docker run -p 65000:65000 rsesheffield/rse-conf-2017:1.0.1
-```
-
-# Want to make sure everything works as expected?
-Run the `scripts/env_test.sh` script from your terminal (`bash scripts/env_test.sh`) and this will make sure everything works as expected.
-
-You will be able to see directly on the terminal is the test passed.
-
-# Rebuilding the container
-
-To rebuild the Docker container:
-
-```sh
-sudo docker build -t rsesheffield/rse-conf-2017:1.0.1 -t rsesheffield/rse-conf-2017:latest .
-```
+### Getting started with the workshop materials
+By now you should have a the RSE conference Virtual Machine already set in your personal laptop, which includes all the materials for this workshop.
