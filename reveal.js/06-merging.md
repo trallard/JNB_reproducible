@@ -1,7 +1,7 @@
 <section class='dark-diagonal'>
 
 <h2>More hands on... yei!</h2>
-<img src="../resources/noidea.jpg"  style='width:30%'>
+<img src="resources/noidea.jpg"  style='width:30%'>
 <br>
 <small> Taken from http://geek-and-poke.com/ </small>
 <br>
@@ -62,7 +62,7 @@ $ git merge hands-on
 ```
 
 aaaaand we end up with something like this! <!-- .element: class="fragment" -->
-<img src ='../resources/conflict.png'> <!-- .element: class="fragment" -->
+<img src ='resources/conflict.png'> <!-- .element: class="fragment" -->
 
 
 
@@ -75,34 +75,3 @@ $ nbmerge base.ipynb local.ipynb remote.ipyn > merged.ipynb
 ```
 $ nbmerge-web base.ipynb local.ipynb remote.ipyn -o merged.ipynb
 ```
-
-
-
-### Finally... how can you make sure that your notebooks are not broken??
- Well without having to manually do it<!-- .element: class="fragment" -->
-
- <accent-text> Continuous integration!</accent-text> <!-- .element: class="fragment" -->
-
----
-
-You can check the status of this repo here: <!-- .element: class="fragment" -->
-
-[https://travis-ci.org/trallard/JNB_reproducible](https://travis-ci.org/trallard/JNB_reproducible) <!-- .element: class="fragment" -->
-
-
-
-## Very basic CI use
-You should have a `.travis.yml` file. This tells Travis what steps to follow for your build plus some other nice stuff:
-
-- language
-- install
-- before_script
-- <strong> script </strong>
-- after_script
-- after_sucess
-- branches
-
-
-
-<display-text> And this is only the very beginning... </display-text>
-<display-text> Thank you all :)  </display-text>
