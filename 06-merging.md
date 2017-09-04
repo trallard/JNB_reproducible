@@ -75,34 +75,3 @@ $ nbmerge base.ipynb local.ipynb remote.ipyn > merged.ipynb
 ```
 $ nbmerge-web base.ipynb local.ipynb remote.ipyn -o merged.ipynb
 ```
-
-
-
-### Finally... how can you make sure that your notebooks are not broken??
- Well without having to manually do it<!-- .element: class="fragment" -->
-
- <accent-text> Continuous integration!</accent-text> <!-- .element: class="fragment" -->
-
----
-
-You can check the status of this repo here: <!-- .element: class="fragment" -->
-
-[https://travis-ci.org/trallard/JNB_reproducible](https://travis-ci.org/trallard/JNB_reproducible) <!-- .element: class="fragment" -->
-
-
-
-## Very basic CI use
-You should have a `.travis.yml` file. This tells Travis what steps to follow for your build plus some other nice stuff:
-
-- language
-- install
-- before_script
-- <strong> script </strong>
-- after_script
-- after_sucess
-- branches
-
-
-
-<display-text> And this is only the very beginning... </display-text>
-<display-text> Thank you all :)  </display-text>
