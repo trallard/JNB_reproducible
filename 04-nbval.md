@@ -56,7 +56,8 @@ $ py.test --nbval classify-demo.ipynb
 <img src='resources/fail_test1.png' style='width:80%'/>
 
 
-<img src='resources/fail_test2.png'>
+
+<img src='resources/fail_test2.png' style='width:80%'/>
 
 
 
