@@ -37,27 +37,19 @@
 
 
 
-
-
-
-- Used <accent-text> Continuous integration!</accent-text>: this can run tests for you regularly and report back<!-- .element: class="fragment" -->
+- Ensure the entire analysis pipeline is as user independent as possible (from data sourcing to digital objects generation)
+- Use <accent-text> Continuous integration!</accent-text>: this can run tests for you regularly and report back<!-- .element: class="fragment" -->
 (You can check the status of this repo here: <!-- .element: class="fragment" -->)
 
 [https://travis-ci.org/trallard/JNB_reproducible](https://travis-ci.org/trallard/JNB_reproducible) <!-- .element: class="fragment" -->
 
 
 
-## Very basic CI use
-You should have a `.travis.yml` file. This tells Travis what steps to follow for your build plus some other nice stuff:
-
-- language
-- install
-- before_script
-- <strong> script </strong>
-- after_script
-- after_sucess
-- branches
-
+# Value your digital assets:
+- Consider publishing your code
+- Make it open source (if possible)
+- Get a DOI for your code too
+- Do not neglect code coverage
 
 
 

@@ -57,7 +57,8 @@ $ py.test --nbval classify-demo.ipynb
 <img src='../resources/fail_test1.png' style='width:80%'/>
 
 
-<img src='../resources/fail_test2.png'>
+
+<img src='../resources/fail_test2.png' style='width:80%'/>
 
 
 
@@ -71,16 +72,32 @@ $ py.test --nbval classify-demo.ipynb
   <li> Outputs and inputs are <strong> stored </strong> in the notebooks </li> <!-- .element: class="fragment" -->
   <li> These outputs will be used a <strong>reference</strong> for the tests</li> <!-- .element: class="fragment" -->
   </ul>
-  </div>
+</div>
 
-  <div class="single-block single2">
+<div class="single-block single2">
   <ul>
   <li> Validating with py.test runs the notebook <strong>without
   storing </strong> the information</li> <!-- .element: class="fragment" -->
   <li>Compares the new outputs to the <strong> stored ones </strong></li> <!-- .element: class="fragment" -->
-  </div>
-  </div>
+</div>
 </section>
+
+
+
+## nbdime <i class="fa fa-plus" aria-hidden="true"></i> nbval <i class="fa fa-equal" aria-hidden="true"></i> rich rendered unit test
+
+```bash
+$ py.test --nbval --nbdime classify-demo.ipynb
+```
+
+
+
+<img src='../resources/nbval_dime1.PNG' style='width:80%'/>
+<img src='../resources/nbval_dime2.PNG' style='width:80%'/>
+
+
+
+<img src='../resources/nbval_dime3.PNG' style='width:80%'/>
 
 
 
@@ -142,17 +159,8 @@ replace: TIME-STAMP
 
 
 
-Explicitly say which outputs to evaluate
-You need to open the Jupyter notebook and select which cells to be evaluated or not.
-```python
-# NBVAL_IGNORE_OUTPUT
-# NBVAL_CHECK_OUTPUT
-```
-
-
-
-If you are only interested in verifying if your notebooks <strong>are broken or not</strong>
-you can specify `--nbval-lax` which runs notebooks and checks for errors, but only compares the outputs of cells with a `#NBVAL_CHECK_OUTPUT` marker comment.
+If you are only interested in verifying if your notebooks <strong>are broken or not</strong> (check for exceptions)
+you can use `--nbval-lax` which runs notebooks and checks for errors, but only compares the outputs of cells with a `#NBVAL_CHECK_OUTPUT` marker comment.
 ```bash
 $ py.test --nbval-lax classify-demo.ipynb
 ```
@@ -160,3 +168,19 @@ $ py.test --nbval-lax classify-demo.ipynb
 
 
 <img src='../resources/nbval-lax.png' style='width:100%' />
+
+
+
+### Explicitly say which outputs to evaluate
+
+You need to open the Jupyter notebook and select which cells to be evaluated or not using any of the following #comments in the notebook code cells
+```python
+# NBVAL_IGNORE_OUTPUT
+# NBVAL_CHECK_OUTPUT
+# NBVAL_RAISES_EXCEPTION
+```
+
+
+
+Try it yourself: open classify-demo.ipynb
+and add the nbval comments to some of the cells
