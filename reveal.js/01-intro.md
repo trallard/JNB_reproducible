@@ -1,32 +1,13 @@
 ### <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>  We know you are eager to start but first things first
-We need to activate our Docker container and make sure eveything is up to date
+We need to make sure evrything is up to date
 
 <img src='../resources/docker.png' style='width:15%'/>
 
 
 
-First let's enable Docker:
-```bash
-$ sudo systemctl start docker
-$ sudo systemctl enable docker
-```
-We did some updates, you know, to make things easier for you so we need to
-pull these updates:
-```bash
-$ sudo docker pull rsesheffield/rse-conf-2017:1.0.1
-```
+- We created this Etherpad for the workshop: [https://etherpad.wikimedia.org/p/RSE-reproNB](https://etherpad.wikimedia.org/p/RSE-reproNB)
 
-Now we are ready to go...
-```bash
-$ sudo docker run -p 65000:65000 -ti rsesheffield/rse-conf-2017:1.0.1 /bin/bash
-```
-
-
-
-### You should have a fully operational container now...
-And your prompt will look similar to this:
-
-<img src='../resources/docker_prompt.png' style='width:100%'/>
+- Follow the instructions given in the learner's instructions file: [https://goo.gl/DB6XEb](https://goo.gl/DB6XEb)
 
 
 

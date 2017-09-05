@@ -84,11 +84,13 @@ $ py.test --nbval classify-demo.ipynb
 
 
 
-## nbdime <i class="fa fa-plus" aria-hidden="true"></i> nbval <i class="fa fa-equal" aria-hidden="true"></i> rich rendered unit test
+## nbdime <i class="fa fa-plus" aria-hidden="true"></i> nbval  = rich rendered unit test
 
 ```bash
 $ py.test --nbval --nbdime classify-demo.ipynb
 ```
+
+This won't work in your container as we are using some aliases and using specific ports... but here's what you should get in your local computer
 
 
 
@@ -174,13 +176,19 @@ $ py.test --nbval-lax classify-demo.ipynb
 ### Explicitly say which outputs to evaluate
 
 You need to open the Jupyter notebook and select which cells to be evaluated or not using any of the following #comments in the notebook code cells
-```python
-# NBVAL_IGNORE_OUTPUT
-# NBVAL_CHECK_OUTPUT
-# NBVAL_RAISES_EXCEPTION
-```
+<div class='fragment'>
+   <img class='modal_img ' src='resources/nbval_check.png' style='width: 75%' />
+   <img class='modal_img ' src='resources/nbval_nocheck.png' style='width: 65%'/>
+</div>
 
 
 
-Try it yourself: open classify-demo.ipynb
-and add the nbval comments to some of the cells
+<div>
+   <img class='modal_img' src='resources/exception.png' style='width: 75%'/>
+   <img class='modal_img' src='resources/nbval_exception.png' style='width: 75%'/>
+</div>
+
+<div class='float_modal fragment' style='top: 70%'>
+<p class='modal_p'> Try it yourself: open classify-demo.ipynb
+and add the nbval comments to some of the cells then run `py.test --nbval classify-demo.ipynb` </p>
+</div>

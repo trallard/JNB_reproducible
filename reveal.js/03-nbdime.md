@@ -26,22 +26,10 @@ You get:
 
 
 ## Now let's play with this
-<i class="fa fa-code-fork" aria-hidden="true"></i> As part of your Docker container
-you should have a fork of this repo in your `jupyter` directory.
+You should have the contents of our workshop repository in the home directory of your Docker container
 
 <p class= "fragment grow"> [https://github.com/trallard/JNB_reproducible](https://github.com/trallard/JNB_reproducible)
 </p>
-
-
-
-We need to ensure we are on the <accent-text>master</accent-text> branch.
-```bash
-$ git checkout master
-```
-you should be able to to check if you are in the right branch now by doing
-```bash
-$ git branch
-```
 
 
 

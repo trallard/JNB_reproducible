@@ -28,12 +28,8 @@ We have this Jupyter notebook in our workshop repo...
 
 
 
-If you want to see a <strong> live </strong> version of this you can launch jupyter notebooks:
-
-```bash
-$ jupyter notebook
-```
-And open 'RNA-sequencing.ipynb'
+We already have a Jupyter server running in our container so let's use this to have a look at the notebook we will be using:
+`RNA-sequencing.ipynb`
 
 
 
