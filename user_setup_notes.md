@@ -16,5 +16,6 @@
     ```sh
     sudo docker exec -ti nbdime_nbval /bin/bash
     ```
+1. You are now able to run commands inside the Docker container.  Type `pwd` to confirm that you are in the `/home/jupyter/JNB_reproducible` directory within the container.
 
 You're now ready to start the tutorial.
