@@ -38,7 +38,7 @@
 
 
 - Ensure the entire analysis pipeline is as user independent as possible (from data sourcing to digital objects generation)
-- Use <accent-text> Continuous integration!</accent-text>: this can run tests for you regularly and report back<!-- .element: class="fragment" -->
+- Use Continuous integration: this can run tests for you regularly and report back<!-- .element: class="fragment" -->
 (You can check the status of this repo here: <!-- .element: class="fragment" -->)
 
 [https://travis-ci.org/trallard/JNB_reproducible](https://travis-ci.org/trallard/JNB_reproducible) <!-- .element: class="fragment" -->
@@ -50,6 +50,7 @@
 - Make it open source (if possible)
 - Get a DOI for your code too
 - Do not neglect code coverage
+- Choose a suitable license ([https://choosealicense.com](https://choosealicense.com))
 
 
 
