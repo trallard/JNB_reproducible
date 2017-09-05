@@ -35,7 +35,7 @@ The code as well as the license terms of both packages can be found at:
 - [nbval GitHub repository](https://github.com/computationalmodelling/nbval)
 - [nbdime GitHub repository](https://github.com/jupyter/nbdime)
 
-The scripts and jupyter notebook contained in this repository are distributed under the 3-Clause BSD license.
+The scripts and jupyter notebook contained in this repository are distributed under [the 3-Clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Pre-requisites
 - Make sure you have a GitHub account
