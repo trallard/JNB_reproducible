@@ -60,4 +60,4 @@ We will have both hands-on bits ans discussion slots, for this purpose we have s
 ### Getting started with the workshop materials
 By now you should have a the RSE conference Virtual Machine already set in your personal laptop, which includes all the materials for this workshop.
 
-You now need to following [these notes](./user_setup_notes.md) to prepare for this tutorial.
+You now need to follow[these notes](./user_setup_notes.md) to prepare for this tutorial.
