@@ -1,16 +1,23 @@
-jupyter notebook &> /dev/null &
-ps aux | grep -ie jupyter | awk '{print $2}' | xargs kill -9
-clear
+#!/bin/bash
 
-echo "Notebooks working properly"
+CUR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+pushd ${CUR_DIR}/..
 
-git clone https://github.trallard/JNB_reproducible
-cd JNB_reproducible
+echo "Check that we can run a single-user Jupyter server..."
+jupyter nbconvert --to notebook --output-dir=/tmp --execute classify-demo.ipynb
+if [ $? -eq 0 ]; then
+    echo "...yes"
+else
+    echo "...no"
+fi
 
+echo -e "\nCheck we can run nbval..."
 py.test --nbval-lax classify-demo.ipynb
+if [ $? -eq 0 ]; then
+    echo "...yes"
+else
+    echo "...no"
+fi
 
-cd..
-
-rm -rm JNB_reproducible
-
-echo "Test completed"
+popd
+echo "\nTests completed"
