@@ -28,7 +28,16 @@ Alternatively the web-hosted version of the slides can be found in the following
 Getting all of the workshop content should be as easy as doing a `git clone` or `git fork` on this repository.
 
 ## Licensing
------ Copy from Whittaker ----
+
+The creative material of this workshop (including the presentation slides as well as the images from external sources used in the presentation) are licensed under [ CC BY 4.0 ](https://creativecommons.org/licenses/by/4.0/)
+
+nbval and nbdime are open source projects developed as part of the European funded project [OpenDreamKit project](http://opendreamkit.org).
+
+The code as well as the license terms of both packages can be found at:
+- [nbval GitHub repository](https://github.com/computationalmodelling/nbval)
+- [nbdime GitHub repository](https://github.com/jupyter/nbdime)
+
+The scripts and jupyter notebook contained in this repository are distributed under [the 3-Clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Pre-requisites
 - Make sure you have a GitHub account
