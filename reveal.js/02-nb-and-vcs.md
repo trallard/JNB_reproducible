@@ -28,6 +28,15 @@ We have this Jupyter notebook in our workshop repo...
 
 
 
+If you want to see a <strong> live </strong> version of this you can launch jupyter notebooks:
+
+```bash
+$ jupyter notebook
+```
+And open 'RNA-sequencing.ipynb'
+
+
+
 One of our collaborators has made some changes...
 - Can you tell what those changes are?
 - How readable are these changes?

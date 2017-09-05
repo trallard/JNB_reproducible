@@ -38,12 +38,16 @@ We need to ensure we are on the <accent-text>master</accent-text> branch.
 ```bash
 $ git checkout master
 ```
+you should be able to to check if you are in the right branch now by doing
+```bash
+$ git branch
+```
 
 
 
 ## Getting started
 The most basic example...
-Diffing two notebooks:
+diffing two notebooks:
 ```bash
 $ nbdiff -som diff_ex/RNA-sequencing.ipynb diff_ex/RNA-sequencing2.ipynb
 ```
@@ -75,7 +79,9 @@ and display <strong> rich rendered diffs </strong> on our web browser.
 ```bash
 $ nbdiff-web -so diff_ex/RNA-sequencing.ipynb diff_ex/RNA-sequencing2.ipynb
 ```
-
+<div class='float_modal fragment'>
+<p class='modal_p'> Note: you do not need to be connected to the internet </p>
+</div>
 
 
 <img src="../resources/diff_web1.PNG" style='width:100%'/>
@@ -93,7 +99,7 @@ $ nbdiff-web -so diff_ex/RNA-sequencing.ipynb diff_ex/RNA-sequencing2.ipynb
 
 
 
-<img src="../resources/diff_web4.PNG" style='width:100%'/>
+<img src="../resources/diff_web4.PNG" style='width:80%'/>
 
 
 
@@ -138,8 +144,8 @@ $ nbdiff-web de2863c 404e4e0
 
 
 
-<img src="../resources/diff_webgit1.png" style='width:75%'/>
+<img src="../resources/diff_webgit1.png" style='width:70%'/>
 
 
 
-<img src="../resources/diff_webgit1.png" style='width:75%'/>
+<img src="../resources/diff_webgit1.png" style='width:70%'/>

@@ -96,7 +96,7 @@ scientific advancement<!-- .element: class="fragment" -->
 
 
 ### Lorena Barba's famous notebooks
-<img src='../resources/lb1.PNG'>
+<img src='../resources/lb1.PNG' style='width: 40%'>
 
 
 

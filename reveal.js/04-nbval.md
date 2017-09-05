@@ -11,7 +11,8 @@
 
 ### Brought to you by... OpenDreamKit too!
 #### (these guys are doing good stuff!)
-<img src="../resources/odk-logo.svg" height='400px'>
+<a href='http://opendreamkit.org' target='_blank'>
+<img src="../resources/odk-logo.svg" height='400px'> </a>
 <br>
 <a href='https://github.com/computationalmodelling/nbval'><i class="fa fa-github" aria-hidden="true"></i> repo here </a>
 
@@ -37,9 +38,9 @@ We will be working with this Jupyter notebook:
 
 
 
-<img src='../resources/classify2.png' style='width: 40%'/>
+<img src='../resources/classify2.png' style='width: 35%'/>
 
-You can find it here: [https://goo.gl/B2Y4J7](https://goo.gl/B2Y4J7)
+You can find it here: [https://goo.gl/B2Y4J7](https://goo.gl/B2Y4J7) or run a live version in your laptop
 
 
 
