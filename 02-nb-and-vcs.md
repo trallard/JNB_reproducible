@@ -28,6 +28,15 @@ We have this Jupyter notebook in our workshop repo...
 
 
 
+If you want to see a <strong> live </strong> version of this you can launch jupyter notebooks:
+
+```bash
+$ jupyter notebook
+```
+And open 'RNA-sequencing.ipynb'
+
+
+
 One of our collaborators has made some changes...
 - Can you tell what those changes are?
 - How readable are these changes?
@@ -58,7 +67,7 @@ Write your findings in our etherpad:
   Jupyter notebooks are saved in the form of plain text JSON format...
 
  <div class='fragment'>
-  <div class='float_modal fragment fade-out' style='top: 80%; left:20%'>
+  <div class='float_modal fragment fade-out' style='top: 78%; left:20%'>
     <img class='modal_img ' src='resources/json_lol.png' />
   </div>
 </div>
