@@ -44,6 +44,8 @@ Getting all of the workshop content should be as easy as doing a `git clone` or 
 Also you will need to have a terminal / command line tool (CygWin or git bash are recommended for Windows users).
 
 ## Attendees of the RSE conference 2017
+We will have some hands-on bits as well as discussion slots in this workshop, for this purpose we have set an Etherpad at [https://etherpad.wikimedia.org/p/RSE-reproNB](https://etherpad.wikimedia.org/p/RSE-reproNB). 
+
 
 ### Getting started with the workshop materials
 By now you should have a the RSE conference Virtual Machine already set in your personal laptop, which includes all the materials for this workshop.
