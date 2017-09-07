@@ -1,8 +1,8 @@
 FROM debian:stretch
 MAINTAINER Will Furnass
-LABEL version="1.0.0"
+LABEL version="1.0.2"
 LABEL vendor="University of Sheffield"
-LABEL release-date="2017-08-03"
+LABEL release-date="2017-09-07"
 LABEL version.is-production="true"
 
 # Install the OS packages needed (inc Python 3.5)
