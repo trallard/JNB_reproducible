@@ -37,9 +37,6 @@ The code as well as the license terms of both packages can be found at:
 
 The scripts and jupyter notebook contained in this repository are distributed under [the 3-Clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
 
-## Attendees of the RSE conference 2017
-We will have some hands-on bits as well as discussion slots in this workshop, for this purpose we have set an Etherpad at [https://etherpad.wikimedia.org/p/RSE-reproNB](https://etherpad.wikimedia.org/p/RSE-reproNB).
-
 
 ## Pre-requisites
 
@@ -54,10 +51,10 @@ We will have some hands-on bits as well as discussion slots in this workshop, fo
 Also you will need to have a terminal ([Git Bash](https://git-for-windows.github.io/) or [CygWin](http://www.cygwin.com/) are recommended for Windows users).
 
 ## Attendees of the RSE conference 2017
-We will have both hands-on bits ans discussion slots, for this purpose we have set up an  [ Etherpad here](https://etherpad.wikimedia.org/p/RSE-reproNB).
+We will have some hands-on bits as well as discussion slots in this workshop, for this purpose we have set an Etherpad at [https://etherpad.wikimedia.org/p/RSE-reproNB](https://etherpad.wikimedia.org/p/RSE-reproNB).
 
 
 ### Getting started with the workshop materials
 By now you should have a the RSE conference Virtual Machine already set in your personal laptop, which includes all the materials for this workshop.
 
-You now need to following [these notes](./user_setup_notes.md) to prepare for this tutorial.
+You now need to follow [these notes](./user_setup_notes.md) to prepare for this tutorial.
