@@ -1,5 +1,7 @@
 # Jupyter notebooks for reproducible research
 
+[![DOI](https://zenodo.org/badge/97463519.svg)](https://zenodo.org/badge/latestdoi/97463519)
+
 Hopefully this will be green....
 [![Build Status](https://travis-ci.org/trallard/JNB_reproducible.svg?branch=master)](https://travis-ci.org/trallard/JNB_reproducible)
 
